@@ -98,9 +98,39 @@
       ],
       "Replication": "Auto",
       "Description": "This will set the font on your ribbon.\n\nModifiers.SetFont (fontName: string): string"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 3.4000000000000004,
+      "Id": "2f31446d303c47518b7c53cc71ae33a1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b8a007fdaf244d6b88c8618cecca43c8",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
     }
   ],
-  "Connectors": [],
+  "Connectors": [
+    {
+      "Start": "b8a007fdaf244d6b88c8618cecca43c8",
+      "End": "11c11b08e23542a2a700107205fc5e4f",
+      "Id": "7284ddb018a04e6f9531397be3567c79"
+    }
+  ],
   "Dependencies": [],
   "Bindings": [],
   "View": {
@@ -154,6 +184,16 @@
         "Excluded": false,
         "X": 1494.7265127052542,
         "Y": 926.22366027048815
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Slider",
+        "Id": "2f31446d303c47518b7c53cc71ae33a1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1098.1624365525079,
+        "Y": 710.27322067798616
       }
     ],
     "Annotations": [
@@ -170,7 +210,7 @@
         "Height": 98.472786565412974,
         "FontSize": 36.0,
         "InitialTop": 434.137649796498,
-        "InitialHeight": 141.059858754912,
+        "InitialHeight": 140.87278656541298,
         "TextblockHeight": 43.2,
         "Background": "#FF48B9FF"
       },
@@ -186,7 +226,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 529.93824117331,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FFB0C4DE"
       },
@@ -202,7 +242,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 529.938241173309,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FFD3D3D3"
       },
@@ -218,7 +258,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 529.938241173309,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FF90EE90"
       },
@@ -234,7 +274,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 530.623734986795,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FFFFA07A"
       },
@@ -250,7 +290,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 531.132762605449,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FF87CEFA"
       },
@@ -266,7 +306,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 531.086886279586,
-        "InitialHeight": 123.0,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FFFFE4C4"
       },
@@ -282,7 +322,7 @@
         "Height": 83.200000000000017,
         "FontSize": 24.0,
         "InitialTop": 531.159581767755,
-        "InitialHeight": 160.251445779565,
+        "InitialHeight": 140.0,
         "TextblockHeight": 28.8,
         "Background": "#FF66CDAA"
       },
@@ -411,10 +451,52 @@
         "InitialHeight": 0.0,
         "TextblockHeight": 0.0,
         "Background": "#FFC1D676"
+      },
+      {
+        "Id": "95f5af6d289143d2a4b3b8188acf1258",
+        "Title": "**Rhythm v.2018.9.19",
+        "Nodes": [],
+        "Left": 1494.7265127052542,
+        "Top": 750.79348049957866,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "382358574c97476d978b4786c4107a6a",
+        "Title": "**Rhythm v.2018.9.19",
+        "Nodes": [],
+        "Left": 1494.7265127052542,
+        "Top": 610.36330072866906,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "68facad0406343bf97ba0461d612bf23",
+        "Title": "**Rhythm v.2018.9.19",
+        "Nodes": [],
+        "Left": 1494.7265127052542,
+        "Top": 891.22366027048815,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
       }
     ],
-    "X": -895.76039473086917,
-    "Y": -474.34925157797977,
-    "Zoom": 1.0177323483261604
+    "X": -946.10422630931146,
+    "Y": -378.89338887894951,
+    "Zoom": 0.84769265030747676
   }
 }
