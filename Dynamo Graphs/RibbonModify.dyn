@@ -122,6 +122,51 @@
       ],
       "Replication": "Disabled",
       "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 220,
+        "G": 28,
+        "B": 184,
+        "A": 255
+      },
+      "NodeType": "ColorInputNode",
+      "Id": "b0734557cd7c4d79b5b335086b0c8879",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "cffa08beeb1d4c93ba78848f99301ad4",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Select a Color from the palette"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Wingdings\";",
+      "Id": "24f3ae3745754585ae382e1513bbf127",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a063caacb9804b3c8a285d86340092d9",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
     }
   ],
   "Connectors": [
@@ -129,6 +174,16 @@
       "Start": "b8a007fdaf244d6b88c8618cecca43c8",
       "End": "11c11b08e23542a2a700107205fc5e4f",
       "Id": "7284ddb018a04e6f9531397be3567c79"
+    },
+    {
+      "Start": "cffa08beeb1d4c93ba78848f99301ad4",
+      "End": "58fc66a243f54f7b8f698378474bae0d",
+      "Id": "2154c1375e6b479185e4e80dc9aa2de3"
+    },
+    {
+      "Start": "a063caacb9804b3c8a285d86340092d9",
+      "End": "cee8720fe8f74ba79ac68a1796c5ffb7",
+      "Id": "c93f4952cf4a4bf7a72869f7b473c6c4"
     }
   ],
   "Dependencies": [],
@@ -194,6 +249,26 @@
         "Excluded": false,
         "X": 1098.1624365525079,
         "Y": 710.27322067798616
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Color Palette",
+        "Id": "b0734557cd7c4d79b5b335086b0c8879",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1037.3619069292172,
+        "Y": 880.42480362748574
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "24f3ae3745754585ae382e1513bbf127",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1217.0,
+        "Y": 955.0
       }
     ],
     "Annotations": [
@@ -495,8 +570,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -946.10422630931146,
-    "Y": -378.89338887894951,
-    "Zoom": 0.84769265030747676
+    "X": -936.7212108448515,
+    "Y": -492.66985922694528,
+    "Zoom": 0.89424592855589546
   }
 }
